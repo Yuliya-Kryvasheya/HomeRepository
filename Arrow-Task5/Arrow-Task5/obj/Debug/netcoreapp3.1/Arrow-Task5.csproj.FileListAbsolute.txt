@@ -1,0 +1,12 @@
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\bin\Debug\netcoreapp3.1\Arrow-Task5.exe
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\bin\Debug\netcoreapp3.1\Arrow-Task5.deps.json
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\bin\Debug\netcoreapp3.1\Arrow-Task5.runtimeconfig.json
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\bin\Debug\netcoreapp3.1\Arrow-Task5.runtimeconfig.dev.json
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\bin\Debug\netcoreapp3.1\Arrow-Task5.dll
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\bin\Debug\netcoreapp3.1\Arrow-Task5.pdb
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\obj\Debug\netcoreapp3.1\Arrow-Task5.AssemblyInfoInputs.cache
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\obj\Debug\netcoreapp3.1\Arrow-Task5.AssemblyInfo.cs
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\obj\Debug\netcoreapp3.1\Arrow-Task5.csproj.CoreCompileInputs.cache
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\obj\Debug\netcoreapp3.1\Arrow-Task5.dll
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\obj\Debug\netcoreapp3.1\Arrow-Task5.pdb
+C:\Users\Yuliya_Kryvasheya\Desktop\HomeRepository\Arrow-Task5\Arrow-Task5\obj\Debug\netcoreapp3.1\Arrow-Task5.genruntimeconfig.cache
