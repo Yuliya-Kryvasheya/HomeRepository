@@ -4,11 +4,11 @@ public class Task2
 {
     public static void Main()
     {
-        int[] a = new int[50];
-        int n;
+                        
         Console.Write("Input the number of elements to store in the array :");
-        n = Convert.ToInt32(Console.ReadLine());
-
+        var n = Convert.ToInt32(Console.ReadLine());
+        int[] a = new int[n];
+        
         Console.Write("Input {0} elements in the array :\n", n);
         for (int i = 0; i < n; i++)
         {
