@@ -10,7 +10,7 @@ namespace Task5
             Console.Write("Input the string: ");
             s = Console.ReadLine();
 
-            int s1 = s.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
+            int s1 = s.Split(" ", StringSplitOptions.RemoveEmptyEntries).Length;
             Console.Write("Total number of words in the string is: {0}\n", s1);
         }
     }
