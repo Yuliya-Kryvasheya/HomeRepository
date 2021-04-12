@@ -1,23 +1,44 @@
 ﻿using System;
-public class Task1
+
+namespace Task1
 {
-    public static void Main()
+    class Program
     {
-        int[] a = new int[10];
-        int i;
-
-        Console.Write("Input 10 elements in the array :\n");
-        for (i = 0; i < 10; i++)
+        static void Main(string[] args)
         {
-            Console.Write("element - {0} : ", i);
-            a[i] = Convert.ToInt32(Console.ReadLine());
+            var a = InputArrayElements();
+            WriteArrayElements(a);
         }
 
-        Console.Write("\nElements in array are: ");
-        for (i = 0; i < 10; i++)
+        public static int[] InputArrayElements()
         {
-            Console.Write("{0}  ", a[i]);
+            int[] a = new int[10];
+
+            Console.WriteLine("Input 10 elements in the array:");
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write("element - {0} : ", i);
+                var inputString = Console.ReadLine().Trim();
+
+                if (!int.TryParse(inputString, out a[i]))
+                {
+                    Console.WriteLine("Please enter a correct value!");
+                    i--;
+                    continue;
+                }
+            }
+            return a;
         }
-        Console.Write("\n");
+
+        public static void WriteArrayElements(int[] arr)
+        {
+            Console.Write("\nElements in array are:");
+
+            foreach (int elemet in arr)
+            {
+                Console.Write(" {0}", elemet);
+            }
+        }
     }
 }
