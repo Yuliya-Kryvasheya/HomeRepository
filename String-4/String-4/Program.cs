@@ -14,8 +14,6 @@ namespace Task4
             Console.Write("The characters of the string in reverse are: \n");
             _ = s.Split(' ');
 
-            foreach (var c1 in s)
-            
             while (i >= 0)
             {
                 Console.Write("{0} ", s[i]);
