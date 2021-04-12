@@ -22,7 +22,7 @@ public class Task3
         {
             Sum += a[i];
         }
-        Console.WriteLine("Sum of all elements stored in the array is: " + Sum);
 
+        Console.WriteLine("Sum of all elements stored in the array is: " + Sum);
     }
 }
