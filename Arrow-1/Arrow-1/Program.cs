@@ -9,7 +9,6 @@ namespace Task1
             var a = InputArrayElements();
             WriteArrayElements(a);
         }
-
         public static int[] InputArrayElements()
         {
             int[] a = new int[10];
@@ -30,7 +29,6 @@ namespace Task1
             }
             return a;
         }
-
         public static void WriteArrayElements(int[] arr)
         {
             Console.Write("\nElements in array are:");
