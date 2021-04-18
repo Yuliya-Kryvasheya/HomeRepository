@@ -4,24 +4,16 @@ using System.Globalization;
 
 namespace ConsoleApp
 {
-    class HomeTask
-    {
-        public string taskname;
-        public DateTime? date;
-        public DateTime? time;
-        public int? priority;
-    }
 
     class Program
     {
         static void Main(string[] args)
-        {
-            HomeTask ht = new HomeTask();
+        {            
             HomeTask[] homeTasksArray = new HomeTask[0];
             int i = 0;
             do
             {
-                ht = EnterHomeTask(i);
+                HomeTask ht = EnterHomeTask(i);
                 Array.Resize(ref homeTasksArray, homeTasksArray.Length + 1);
                 homeTasksArray[i] = ht;
                 i++;
@@ -33,16 +25,26 @@ namespace ConsoleApp
             Console.ReadLine();
         }
 
-        public static HomeTask EnterHomeTask(int number)
+        private static HomeTask EnterHomeTask(int i)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static HomeTask(int number)
         {
             Console.WriteLine("Enter task {0}: ", number + 1);
-            HomeTask homeTask = new HomeTask();
+
             Console.WriteLine("Enter task name");
-            string title = Console.ReadLine();
-            if (!String.IsNullOrEmpty(title))
+            string homeTask = Console.ReadLine();
+            if (!String.IsNullOrEmpty(homeTask))
             {
-                homeTask.taskname = title;
+                var taskname = homeTask;
             }
+            return homeTask;
+        }
+
+        public static taskDateTime(DateTime? date, DateTime? time)
+        {
             Console.WriteLine("Enter date");
 
             string taskDate = Console.ReadLine();
@@ -50,7 +52,7 @@ namespace ConsoleApp
             {
                 try
                 {
-                    homeTask.date = DateTime.Parse(taskDate, CultureInfo.CreateSpecificCulture("ru-ru"));
+                    taskDate.date = DateTime.Parse(taskDate, CultureInfo.CreateSpecificCulture("ru-ru"));
                 }
                 catch (Exception e)
                 {
@@ -59,8 +61,9 @@ namespace ConsoleApp
             }
             else
             {
-                homeTask.date = null;
+                taskDate.date = null;
             }
+
             Console.WriteLine("Enter time");
 
             string taskTime = Console.ReadLine();
@@ -69,7 +72,7 @@ namespace ConsoleApp
             {
                 try
                 {
-                    homeTask.time = new DateTime(1, 1, 1, Int32.Parse(time[0]), Int32.Parse(time[1]), 0);
+                    taskTime.time = new DateTime(1, 1, 1, Int32.Parse(time[0]), Int32.Parse(time[1]), 0);
                 }
                 catch (Exception e)
                 {
@@ -78,17 +81,20 @@ namespace ConsoleApp
             }
             else
             {
-                homeTask.time = null;
+                taskTime.time = null;
             }
+        }
 
+        public static Priority()
+        { 
             Console.WriteLine("Enter priority");
 
-            string pr = Console.ReadLine();
-            if (!String.IsNullOrEmpty(pr))
+            string priority = Console.ReadLine();
+            if (!String.IsNullOrEmpty(priority))
             {
                 try
                 {
-                    homeTask.priority = Int32.Parse(pr);
+                    priority.priority = Int32.Parse(priority);
                 }
                 catch (Exception e)
                 {
@@ -97,9 +103,9 @@ namespace ConsoleApp
             }
             else
             {
-                homeTask.priority = null;
+                priority.priority = null;
             }
-            return homeTask;
+            return priority;
         }
 
         public static void PrintHomeTasks(HomeTask[] harr)
@@ -107,7 +113,11 @@ namespace ConsoleApp
             string date;
             string time;
             string priority;
+            PrintTask(harr, out date, out time, out priority);
+        }
 
+        private static void PrintTask(HomeTask[] harr, out string date, out string time, out string priority)
+        {
             for (int i = 0; i < harr.Length; i++)
             {
                 if (harr[i].date == null)
